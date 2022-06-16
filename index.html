@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-sky color="#EBEBEB"></a-sky>
+        <a-plane id="ground" color="black" position="0 0 0" rotation="-90 0 0" width="20" height="10"></a-plane>
+        <!--Antenna-->
+        <a-circle position="0 9.15 0" color="orange" radius="0.8" material="side:double"></a-circle>
+        <a-cylinder color="#757575" height="1.5" radius="0.05" position="0 11 0" animation="property: position; from: -0.2 10.4 -0.1;to:0.2 10.4 -0.1;dir:alternate; loop: true; dur: 1000"></a-cylinder>
+        <a-sphere color="#EF5350" radius="0.3" position="0 11 0" animation="property: position; from: -0.2 11 -0.1; to: 0.2 11 -0.1; dir: alternate; loop: true; dur: 1000"></a-sphere>
+        <a-box id="header" color="#0276AA" position="0 8 0" width="3.2" height="2.2"></a-box>
+        <a-sphere color="#FFF" position="-0.63 8.3 0.2" radius="0.6" rotation="0 10 0"></a-sphere>
+        <a-sphere color="#000" radius="0.15" position="-0.63 8.1 0.9" animation="property: position; from: -0.63 8.1 0.9; to: -0.63 8.3 0.9; dir: alternate; loop: true; dur: 1000"></a-sphere>
+        <a-camera look-controls-enabled wasd-controls-enabled position="0 5 15"> </a-camera>
+    </a-scene>
+</body>
